@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "66a82846-9e3b-420a-88c9-07a48e5eb563",
+		"name": "Car Service Maintenance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "localhost:8080/api/authentication/signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"test name 02\",\n\t\"email\": \"test2@mail.com\",\n\t\"password\": \"testPassword\",\n\t\"authenticationType\": \"local\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/api/authentication/signup",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"authentication",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/api/authentication/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"super-admin@mail.com\",\n\t\"password\": \"superadminpassword\",\n\t\"authenticationType\": \"local\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/authentication/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"authentication",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "userList",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/userList//get-admin-users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Y2YxYzE5MjlmNzA0ZDFjZDBhMDk0YWMiLCJpc1N1cGVyQWRtaW4iOmZhbHNlLCJpc0FkbWluIjp0cnVlLCJpc093bmVyIjpmYWxzZSwibmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkBtYWlsLmNvbSIsIm1vYmlsZU5vIjoiMDE3NDQyNTMwODkiLCJpYXQiOjE1NTkzNDc4MjR9.2x0fjsBDg-z2mP2m41xurOKfQMSeO4V4orTDxXuiOnQ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/userList//get-regular-users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"userList",
+								"",
+								"get-regular-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/userList//get-admin-users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Y2YxYzFiMzlmNzA0ZDFjZDBhMDk0YWQiLCJpc1N1cGVyQWRtaW4iOnRydWUsImlzQWRtaW4iOmZhbHNlLCJpc093bmVyIjpmYWxzZSwibmFtZSI6InN1cGVyLWFkbWluIiwiZW1haWwiOiJzdXBlci1hZG1pbkBtYWlsLmNvbSIsIm1vYmlsZU5vIjoiMDE3NDQyNTMwODkiLCJpYXQiOjE1NTkzNDgyMDB9.EaPlXC-ktdDwyDTjl4bfClAp19EiaSUXPYdIxcRigZs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/userList//get-admin-users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"userList",
+								"",
+								"get-admin-users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cars",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/cars/get-cars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cars/get-cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars",
+								"get-cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/cars/add-car",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"carName\": \"Car 05\",\n\t\"carMilage\": 5555,\n\t\"carRegistrationDate\": \"2020-06-01T12:17:59.488Z\",\n\t\"carDescription\": \"This is car description\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cars/add-car",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars",
+								"add-car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/cars/get-car/5cf26b9b21c5731ee81854d5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cars/get-car/5cf26b9b21c5731ee81854d5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars",
+								"get-car",
+								"5cf26b9b21c5731ee81854d5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/cars/get-car/5cf26b9b21c5731ee81854d5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cars/get-car/5cf26b9b21c5731ee81854d5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars",
+								"get-car",
+								"5cf26b9b21c5731ee81854d5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/cars/update-car/5cf26ce6ef2ca017b4d7763a",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1Y2YxYzFiMzlmNzA0ZDFjZDBhMDk0YWQiLCJpc1N1cGVyQWRtaW4iOnRydWUsImlzQWRtaW4iOmZhbHNlLCJpc093bmVyIjpmYWxzZSwibmFtZSI6InN1cGVyLWFkbWluIiwiZW1haWwiOiJzdXBlci1hZG1pbkBtYWlsLmNvbSIsIm1vYmlsZU5vIjoiMDE3NDQyNTMwODkiLCJpYXQiOjE1NTk0NDMzMTR9.yoXe22d7l4ETqFEJDcs2klt7nNBoOiJs6FUC5gA8QRA",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"carName\": \"updated name\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cars/update-car/5cf26ce6ef2ca017b4d7763a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cars",
+								"update-car",
+								"5cf26ce6ef2ca017b4d7763a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/api/alert/alert-user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/alert/alert-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alert",
+						"alert-user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

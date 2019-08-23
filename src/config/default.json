@@ -1,0 +1,6 @@
+{
+  "jwtPrivateKey": "Slim Shady",
+  "dbAddress": "mongodb://caralertservice:caralertservicepassword12345@ds231377.mlab.com:31377/car-alert-service",
+  "sessionTime": 600000,
+  "port": 8080
+}

@@ -1,0 +1,14 @@
+vue.js based
+
+This would be to manage cars - alerting when they should be serviced and when they need to be checked annually
+
+Admin users would enter these details and select if a normal user should be alerted in addition to admin users
+
+Alerts would be sent out when service or yearly check is required via email (mailgun API) and sms (Twilio API)
+
+Mileage would be calculated from entered or predicted mileage against an entered target mileage. Prediction would be based on previously entered monthly mileage
+
+say at 10,000 miles or every year from purchase it would need to be serviced. If the mileage is entered every month then it would alert when it is close to the target. If it isn't entered every month then it would be estimated and alerts sent based on the estimate
+
+FrontEnd: https://github.com/PanJiaChen/vue-admin-template/tree/permission-control
+Roll Based: Premission Control Branch
