@@ -11,7 +11,7 @@
     "bcrypt": "latest",
     "body-parser": "^1.15.0",
     "chalk": "^2.4.1",
-    "config": "^1.20.4",
+    "config": "^3.3.8",
     "cors": "^2.8.5",
     "dotenv": "^6.1.0",
     "ejs": "^2.4.2",
@@ -40,7 +40,7 @@
     "eslint": "^5.10.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "jest": "^23.5.0",
+    "jest": "^29.3.1",
     "nodemon": "^1.18.4",
     "supertest": "^3.0.0"
   },
